@@ -1,0 +1,44 @@
+.parameters {
+    margin-bottom: 8px;
+}
+
+.image-box {
+    width: 1000px;
+    height: 500px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .help-msg {
+        font-size: 14px;
+        color: gray;
+    }
+}
+
+.image-qc-controls {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-stop {
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .square {
+        background-color: currentColor;
+        width: 0.6em;
+        height: 0.6em;
+    }
+}
