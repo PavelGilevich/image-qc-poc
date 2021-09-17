@@ -5,7 +5,7 @@ function generateImageUrl(idx: number) {
   return `${IMAGE_URL}${idx}`;
 }
 
-const IMAGE_URL = `https://picsum.photos/1200/600?grayscale&random=`;
+const IMAGE_URL = `https://picsum.photos/1400/700?grayscale&random=`;
 const allImageUrls = Array(MAX_IMAGES_CNT)
   .fill("")
   .map((_, idx) => generateImageUrl(idx));

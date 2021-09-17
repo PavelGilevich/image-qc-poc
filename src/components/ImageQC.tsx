@@ -34,7 +34,11 @@ const ImageQC: React.FC = () => {
       return <span className="help-msg">No image available</span>;
 
     if (state.isStopped) {
-      return <span className="help-msg">'Press "Play" to start'</span>;
+      return (
+        <span className="help-msg">
+          {isPreloading ? "Preloading..." : 'Press "Play" to start'}
+        </span>
+      );
     }
     const { loading, error, url } = imageStatus;
     if (loading) return <Spin />;
